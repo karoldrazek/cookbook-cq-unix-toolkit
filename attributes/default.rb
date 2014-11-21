@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: cq-unix-toolkit
+# Cookbook Name:: cq-unix-toolkit-cqjcr
 # Attributes:: default
 #
 # Copyright (C) 2014 Jakub Wadolowski
@@ -18,11 +18,11 @@
 #
 
 # Repository settings
-default['cq-unix-toolkit']['repository']['url'] =
+default['cq-unix-toolkit-cqjcr']['repository']['url'] =
   'https://github.com/Cognifide/CQ-Unix-Toolkit.git'
-default['cq-unix-toolkit']['repository']['revison'] = 'CQM-112'
+default['cq-unix-toolkit-cqjcr']['repository']['revison'] = '1.2-dev'
 
 # General settings
-default['cq-unix-toolkit']['user'] = 'root'
-default['cq-unix-toolkit']['group'] = 'root'
-default['cq-unix-toolkit']['install_dir'] = '/opt/scripts/CQ-Unix-Toolkit'
+default['cq-unix-toolkit-cqjcr']['user'] = 'root'
+default['cq-unix-toolkit-cqjcr']['group'] = 'root'
+default['cq-unix-toolkit-cqjcr']['install_dir'] = '/opt/scripts/CQ-Unix-Toolkit-cqjcr'

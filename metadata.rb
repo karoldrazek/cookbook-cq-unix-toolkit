@@ -1,9 +1,9 @@
-name             'cq-unix-toolkit'
+name             'cq-unix-toolkit-cqjcr'
 maintainer       'Jakub Wadolowski'
 maintainer_email 'jakub.wadolowski@cognifide.com'
 license          'Apache 2.0'
-description      'Installs/Configures cq-unix-toolkit'
-long_description 'Installs/Configures cq-unix-toolkit'
+description      'Installs/Configures cq-unix-toolkit with CQJCR'
+long_description 'Installs/Configures cq-unix-toolkit with CQJCR'
 version          '1.2.0'
 
 depends          'git'

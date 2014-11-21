@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: cq-unix-toolkit
+# Cookbook Name:: cq-unix-toolkit-cqjcr
 # Recipe:: default
 #
 # Copyright (C) 2014 Jakub Wadolowski
@@ -23,9 +23,9 @@ include_recipe 'git'
 
 # Create installation directory
 # -----------------------------------------------------------------------------
-directory node['cq-unix-toolkit']['install_dir'] do
-  owner node['cq-unix-toolkit']['user']
-  group node['cq-unix-toolkit']['group']
+directory node['cq-unix-toolkit-cqjcr']['install_dir'] do
+  owner node['cq-unix-toolkit-cqjcr']['user']
+  group node['cq-unix-toolkit-cqjcr']['group']
   mode '0755'
   recursive true
 
@@ -34,8 +34,8 @@ end
 
 # Checkout Git repository
 # -----------------------------------------------------------------------------
-git node['cq-unix-toolkit']['install_dir'] do
-  repository node['cq-unix-toolkit']['repository']['url']
-  reference node['cq-unix-toolkit']['repository']['revison']
+git node['cq-unix-toolkit-cqjcr']['install_dir'] do
+  repository node['cq-unix-toolkit-cqjcr']['repository']['url']
+  reference node['cq-unix-toolkit-cqjcr']['repository']['revison']
   action :sync
 end
